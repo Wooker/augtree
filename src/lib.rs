@@ -26,7 +26,7 @@ impl<T> AugTree<T>
 where
     T: Clone + PartialOrd,
 {
-    pub(crate) fn new(start: T, end: T) -> Self {
+    pub fn new(start: T, end: T) -> Self {
         let highest = end.clone();
         Self {
             highest,
